@@ -17,6 +17,8 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - poetry >=1.0.10
+    - poetry-core
   run:
     - python >=3.7
     - numpy >=1.18
@@ -45,7 +47,6 @@ requirements:
 test:
   requires:
     - pip
-    - poetry-core
   commands:
     - pip check
   imports:
