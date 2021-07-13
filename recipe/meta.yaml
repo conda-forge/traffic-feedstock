@@ -30,6 +30,7 @@ requirements:
     - shapely
     - requests
     - requests_pkcs12
+    - pyopenssl >=0.14,<0.15
     - appdirs
     - paramiko
     - typing_extensions
