@@ -45,6 +45,7 @@ requirements:
 test:
   requires:
     - pip
+    - poetry-core
   commands:
     - pip check
   imports:
