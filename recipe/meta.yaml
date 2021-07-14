@@ -1,4 +1,4 @@
-{% set version = "2.6.1" %}
+{% set version = "2.6.4" %}
 
 package:
   name: traffic
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/traffic/traffic-{{ version }}.tar.gz
-  sha256: 0f8a09fbb4874aed3acafd24d2ea74496aea506d64972ab20c6f8ae62b84b39f
+  sha256: 21ba876dcde0891fce5dea33a6eae01681f3d21dd8620df507017b8f5ff540ce
 
 build:
   noarch: python
@@ -17,6 +17,8 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - poetry >=1.0.10
+    - poetry-core
   run:
     - python >=3.7
     - numpy >=1.18
