@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -22,28 +22,28 @@ requirements:
   run:
     - python >=3.7
     - numpy >=1.18
-    - scipy
-    - matplotlib-base
+    - scipy >=1.7.0
+    - matplotlib-base >=3.4.2
     - pandas >=1.0.0
     - pyproj >=2.0
     - cartopy >=0.19,<0.20
-    - cartes >=0.2
-    - shapely
-    - requests
-    - requests_pkcs12
-    - appdirs
-    - paramiko
-    - typing_extensions
-    - altair
-    - ipywidgets
-    - ipyleaflet
-    - tqdm >=4.28
+    - cartes >=0.3
+    - shapely >=1.7.1
+    - requests >=2.25.1
+    - requests_pkcs12 >=1.13
+    - appdirs >=1.4.4
+    - paramiko >=2.7.2
+    - typing_extensions >=3.10.0
+    - altair >=4.1.0
+    - ipywidgets >=7.6.3
+    - ipyleaflet >=0.14.0
+    - tqdm >=4.61.1
     - pymodes >=2.9
-    - openap
-    - pyarrow
-    - beautifulsoup4
-    - lxml
-    - metar
+    - openap >=1.1
+    - pyarrow >=4.0,<5.0
+    - beautifulsoup4 >=4.9.3
+    - lxml >=4.6.3
+    - metar >=1.8.0
 
 test:
   requires:
