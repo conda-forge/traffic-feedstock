@@ -30,7 +30,7 @@ requirements:
     - cartes >=0.3
     - shapely >=1.7.1
     - requests >=2.25.1
-    - requests_pkcs12 >=1.13
+    - requests_pkcs12 >=1.10
     - appdirs >=1.4.4
     - paramiko >=2.7.2
     - typing_extensions >=3.10.0
