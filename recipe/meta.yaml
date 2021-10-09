@@ -1,4 +1,4 @@
-{% set version = "2.6.4" %}
+{% set version = "2.6.5" %}
 
 package:
   name: traffic
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/traffic/traffic-{{ version }}.tar.gz
-  sha256: 21ba876dcde0891fce5dea33a6eae01681f3d21dd8620df507017b8f5ff540ce
+  sha256: d66690b46568c292964f0fd220594c0e0e47a7a68deb9b38729df5ca9b9e2c7b
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,30 +20,31 @@ requirements:
     - poetry >=1.0.10
     - poetry-core
   run:
-    - python >=3.7
-    - numpy >=1.18
-    - scipy >=1.7.0
-    - matplotlib-base >=3.4.2
-    - pandas >=1.0.0
-    - pyproj >=2.0
+    - python >=3.7,<4.0
+    - numpy >=1.18,<2.0
+    - scipy >=1.7.0,<2.0
+    - matplotlib-base >=3.4.2,<4.0
+    - pandas >=1.2.4,<2.0
+    - pyproj >=3.1.0,<4.0
     - cartopy >=0.19,<0.20
-    - cartes >=0.3
-    - shapely >=1.7.1
-    - requests >=2.25.1
-    - requests_pkcs12 >=1.10
-    - appdirs >=1.4.4
-    - paramiko >=2.7.2
-    - typing_extensions >=3.10.0
-    - altair >=4.1.0
-    - ipywidgets >=7.6.3
-    - ipyleaflet >=0.14.0
-    - tqdm >=4.61.1
-    - pymodes >=2.9
-    - openap >=1.1
+    - cartes >=0.3,<1.0
+    - shapely >=1.7.1,<2.0
+    - requests >=2.25.1,<3.0
+    - requests_pkcs12 >=1.10,<2.0
+    - pyopenssl >=20.0,<21.0
+    - appdirs >=1.4.4,<2.0
+    - paramiko >=2.7.2,<3.0
+    - typing_extensions >=3.10.0,<4.0
+    - altair >=4.1.0,<5.0
+    - ipywidgets >=7.6.3,<8.0
+    - ipyleaflet >=0.14.0,<0.15
+    - tqdm >=4.61.1,<5.0
+    - pymodes >=2.9,<3.0
+    - openap >=1.1,<2.0
     - pyarrow >=4.0,<5.0
-    - beautifulsoup4 >=4.9.3
-    - lxml >=4.6.3
-    - metar >=1.8.0
+    - beautifulsoup4 >=4.9.3,<5.0
+    - lxml >=4.6.3,<5.0
+    - metar >=1.8.0,<2.0
 
 test:
   requires:
