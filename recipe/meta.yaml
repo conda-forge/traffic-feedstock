@@ -1,4 +1,4 @@
-{% set version = "2.6.4" %}
+{% set version = "2.6.5" %}
 
 package:
   name: traffic
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/traffic/traffic-{{ version }}.tar.gz
-  sha256: 21ba876dcde0891fce5dea33a6eae01681f3d21dd8620df507017b8f5ff540ce
+  sha256: d66690b46568c292964f0fd220594c0e0e47a7a68deb9b38729df5ca9b9e2c7b
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
