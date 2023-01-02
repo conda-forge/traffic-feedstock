@@ -19,6 +19,7 @@ requirements:
     - pip
     - poetry >=1.0.10
     - poetry-core
+    - poetry_dynamic_versioning
   run:
     - python >=3.8,<4.0
     - cartes >=0.7.4
