@@ -25,6 +25,7 @@ requirements:
     - pitot >=0.3.1
     - cartes >=0.7.4
     - pyopensky >=2.0
+    - httpx >=0.26.0
     - requests >=2.27
     - ipywidgets >=7.6
     - ipyleaflet >=0.17
