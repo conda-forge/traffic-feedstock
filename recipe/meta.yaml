@@ -25,7 +25,7 @@ requirements:
     - impunity >=1.0.4
     - pitot >=0.3.1
     - cartes >=0.8.0
-    - pyopensky >=2.0
+    - pyopensky >=2.6
     - httpx >=0.26.0
     - requests >=2.27
     - ipywidgets >=7.6
