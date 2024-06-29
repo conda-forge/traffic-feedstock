@@ -32,7 +32,7 @@ requirements:
     - ipyleaflet >=0.17
     - plotly >=5.22
     - rs1090 >=0.2.0
-    - openap >=1.5
+    - openap >=1.5,<2.0
     - metar >=1.8
     - click >=8.1
     - typing-extensions >=4.2
