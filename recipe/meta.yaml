@@ -1,4 +1,4 @@
-{% set version = "2.10.0" %}
+{% set version = "2.10.1" %}
 
 package:
   name: traffic
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/traffic/traffic-{{ version }}.tar.gz
-  sha256: 1e8bca9feb2dc3ea0441c7c9b33fde8e892e0e1c6b2b513a261ae4f975704a1a
+  sha256: 83855fe12023d75c1f3532264a2f589d310976e44658eaca877dcfb2561b2fbb
 
 build:
   noarch: python
@@ -21,16 +21,18 @@ requirements:
     - pip
   run:
     - python >=3.9,<4.0
+    - numpy >=1.26.4,<2.0.0
     - impunity >=1.0.4
     - pitot >=0.3.1
-    - cartes >=0.7.4
-    - pyopensky >=2.0
+    - cartes >=0.7.6
+    - pyopensky >=2.6
     - httpx >=0.26.0
     - requests >=2.27
     - ipywidgets >=7.6
     - ipyleaflet >=0.17
+    - plotly >=5.22
     - rs1090 >=0.2.0
-    - openap >=1.5
+    - openap >=1.5,<2.0
     - metar >=1.8
     - click >=8.1
     - typing-extensions >=4.2
