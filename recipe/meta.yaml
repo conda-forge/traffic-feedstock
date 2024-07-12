@@ -27,12 +27,11 @@ requirements:
     - cartes >=0.7.6
     - pyopensky >=2.6
     - httpx >=0.26.0
-    - requests >=2.27
     - ipywidgets >=7.6
     - ipyleaflet >=0.17
     - plotly >=5.22
     - rs1090 >=0.2.0
-    - openap >=1.5,<2.0
+    - openap >=2.0
     - metar >=1.8
     - click >=8.1
     - typing-extensions >=4.2
