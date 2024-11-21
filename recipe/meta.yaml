@@ -1,4 +1,4 @@
-{% set version = "2.10.2" %}
+{% set version = "2.11" %}
 
 package:
   name: traffic
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/traffic/traffic-{{ version }}.tar.gz
-  sha256: 6a540a164fd110c95e91e1c90a2c286604e82386f2924748d75341dc97dc85ab
+  sha256: 4d6bec3121c000d62e9f4cf53e29ef5a4cef0b643275008895aeb0548a0f6162
 
 build:
   noarch: python
