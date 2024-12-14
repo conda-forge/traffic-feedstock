@@ -21,7 +21,6 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - numpy >=1.26.4,<2.0.0
     - impunity >=1.0.5
     - pitot >=0.3.1
     - cartes >=0.8.2
