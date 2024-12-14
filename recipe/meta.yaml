@@ -1,12 +1,13 @@
-{% set version = "2.10.2" %}
+{% set version = "2.11.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: traffic
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/t/traffic/traffic-{{ version }}.tar.gz
-  sha256: 6a540a164fd110c95e91e1c90a2c286604e82386f2924748d75341dc97dc85ab
+  url: https://pypi.org/packages/source/t/traffic/traffic-{{ version }}.tar.gz
+  sha256: b0532d12039fbf60fe14f469d9349ffac61ffe79dd0017d86ad65d16450ed4b9
 
 build:
   noarch: python
@@ -15,28 +16,28 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<4.0
-    - poetry-core >=1.0.0
-    - poetry-dynamic-versioning
+    - python {{ python_min }}
+    - hatchling
     - pip
   run:
-    - python >=3.9,<4.0
-    - numpy >=1.26.4,<2.0.0
-    - impunity >=1.0.4
+    - python >={{ python_min }}
+    - impunity >=1.0.5
     - pitot >=0.3.1
-    - cartes >=0.7.6
-    - pyopensky >=2.6
-    - httpx >=0.26.0
+    - cartes >=0.8.2
+    - pyopensky >=2.11
+    - httpx >=0.27.2
     - ipywidgets >=7.6
     - ipyleaflet >=0.17
     - plotly >=5.22
-    - rs1090 >=0.2.0
+    - rs1090 >=0.3.8
     - openap >=2.0
-    - metar >=1.8
+    - metar >=1.11.0
     - click >=8.1
-    - typing-extensions >=4.2
-    - pyarrow >=11.0.0
-    - onnxruntime >=1.12
+    - typing-extensions >=4.12.2
+    - pyarrow >=18.0.0
+    - onnxruntime >=1.19.2
+    - py7zr >=0.22.0
+    - rich >=13.9.4
 
 test:
   imports:
@@ -44,6 +45,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
