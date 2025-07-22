@@ -1,4 +1,4 @@
-{% set version = "2.12" %}
+{% set version = "2.13" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/traffic/traffic-{{ version }}.tar.gz
-  sha256: da0e8fcb4b217a096a06c5862d8394228887bcc8f51c3fe33192253252f376d3
+  sha256: dfa3313f79b7737de402181c224b2d7a913c15d942f18733548b29223a6ee3ed
 
 build:
   noarch: python
